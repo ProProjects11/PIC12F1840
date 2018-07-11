@@ -1,0 +1,187 @@
+
+# 1 "keypad.c"
+
+# 13 "C:\Program Files (x86)\Microchip\xc8\v1.32\include\stdint.h"
+typedef signed char int8_t;
+
+# 20
+typedef signed int int16_t;
+
+# 36
+typedef signed long int int32_t;
+
+# 43
+typedef unsigned char uint8_t;
+
+# 49
+typedef unsigned int uint16_t;
+
+# 63
+typedef unsigned long int uint32_t;
+
+# 71
+typedef signed char int_least8_t;
+
+# 78
+typedef signed int int_least16_t;
+
+# 86
+typedef signed long int int_least24_t;
+
+# 98
+typedef signed long int int_least32_t;
+
+# 105
+typedef unsigned char uint_least8_t;
+
+# 111
+typedef unsigned int uint_least16_t;
+
+# 118
+typedef unsigned long int uint_least24_t;
+
+# 128
+typedef unsigned long int uint_least32_t;
+
+# 137
+typedef signed char int_fast8_t;
+
+# 144
+typedef signed int int_fast16_t;
+
+# 152
+typedef signed long int int_fast24_t;
+
+# 164
+typedef signed long int int_fast32_t;
+
+# 171
+typedef unsigned char uint_fast8_t;
+
+# 177
+typedef unsigned int uint_fast16_t;
+
+# 184
+typedef unsigned long int uint_fast24_t;
+
+# 194
+typedef unsigned long int uint_fast32_t;
+
+# 200
+typedef int32_t intmax_t;
+
+
+
+
+typedef uint32_t uintmax_t;
+
+
+
+
+typedef int16_t intptr_t;
+
+
+
+
+typedef uint16_t uintptr_t;
+
+# 12 "C:\Program Files (x86)\Microchip\xc8\v1.32\include\stdbool.h"
+typedef unsigned char bool;
+
+# 2 "C:\Program Files (x86)\Microchip\xc8\v1.32\include\stddef.h"
+typedef int ptrdiff_t;
+typedef unsigned size_t;
+typedef unsigned short wchar_t;
+
+# 13
+extern int errno;
+
+# 53 "keypad.h"
+void keypad_init(void);
+
+# 58
+uint8_t keypad_read_key(void);
+
+# 48 "mcp23017.h"
+typedef enum {
+MCP23017_REG_IODIRA = 0x00,
+MCP23017_REG_IODIRB,
+MCP23017_REG_IPOLA,
+MCP23017_REG_IPOLB,
+MCP23017_REG_GPINTENA,
+MCP23017_REG_GPINTENB,
+MCP23017_REG_DEFVALA,
+MCP23017_REG_DEFVALB,
+MCP23017_REG_INTCONA,
+MCP23017_REG_INTCONB,
+MCP23017_REG_IOCON1,
+MCP23017_REG_IOCON2,
+MCP23017_REG_GPPUA,
+MCP23017_REG_GPPUB,
+MCP23017_REG_INTFA,
+MCP23017_REG_INTFB,
+MCP23017_REG_INTCAPA,
+MCP23017_REG_INTCAPB,
+MCP23017_REG_GPIOA,
+MCP23017_REG_GPIOB,
+MCP23017_REG_OLATA,
+MCP23017_REG_OLATB
+} mcp23017_registers_t;
+
+# 79
+void mcp23017_init(uint8_t address_3b);
+
+# 84
+void mcp23017_set_slave_addr(uint8_t address_3b);
+
+# 90
+void mcp23017_write_reg(uint8_t reg_address, uint8_t value);
+
+# 96
+uint8_t mcp23017_read_reg(uint8_t reg_address);
+
+# 42 "keypad.c"
+static uint8_t g_old_key;
+static uint8_t g_last_valid_key;
+
+
+
+
+uint8_t keypad_scan(void);
+
+
+uint8_t keypad_scan(void){
+
+return mcp23017_read_reg(MCP23017_REG_GPIOB);
+}
+
+
+void keypad_init(void) {
+mcp23017_write_reg(MCP23017_REG_IODIRB, 0xFF);
+mcp23017_write_reg(MCP23017_REG_GPPUB,0xFF);
+mcp23017_write_reg(MCP23017_REG_IPOLB,0xFF);
+}
+
+uint8_t keypad_read_key(void) {
+uint8_t key;
+
+key = keypad_scan();
+if (key == (0)) {
+
+g_old_key = (0);
+g_last_valid_key = (0);
+} else if (key == g_old_key) {
+
+if (key != g_last_valid_key) {
+
+g_last_valid_key = key;
+}
+else{
+key = (0);
+}
+} else {
+g_old_key = key;
+key = (0);
+}
+return key;
+}

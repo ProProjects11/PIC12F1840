@@ -1,0 +1,701 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Omar\AppData\Local\Temp\sic.obj
+end_init CODE 0 2 2 2 2
+reset_vec CODE 0 0 0 2 2
+config CONFIG 0 8007 8007 2 2
+$dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+cinit CODE 0 7FA 7FA 6 2
+text20 CODE 0 521 521 19 2
+text19 CODE 0 60F 60F 52 2
+text18 CODE 0 577 577 4A 2
+text17 CODE 0 4C8 4C8 9 2
+text16 CODE 0 491 491 5 2
+text15 CODE 0 4AA 4AA 7 2
+text14 CODE 0 4B8 4B8 8 2
+text13 CODE 0 4DC 4DC D 2
+text12 CODE 0 496 496 5 2
+text11 CODE 0 49B 49B 5 2
+text10 CODE 0 4F7 4F7 13 2
+text9 CODE 0 4E9 4E9 E 2
+text8 CODE 0 4A0 4A0 5 2
+text7 CODE 0 4D1 4D1 B 2
+text6 CODE 0 4B1 4B1 7 2
+text5 CODE 0 5C1 5C1 4E 2
+text4 CODE 0 53A 53A 3D 2
+text3 CODE 0 4C0 4C0 8 2
+text2 CODE 0 4A5 4A5 5 2
+text1 CODE 0 50A 50A 17 2
+maintext CODE 0 661 661 199 2
+cstackBANK0 BANK0 1 20 20 15 1
+cstackCOMMON COMMON 1 70 70 E 1
+bssBANK0 BANK0 1 35 35 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 00037-0006F 1
+BANK1 000A0-000EF 1
+BANK2 00120-0016F 1
+BIGRAM 02000-020EF 1
+CODE 00004-00490 2
+CODE 00800-00FFF 2
+CONST 00004-00490 2
+CONST 00800-00FFF 2
+EEDATA 0F000-0F0FF 2
+ENTRY 00004-00490 2
+ENTRY 00800-00FFF 2
+IDLOC 08000-08003 2
+RAM 00037-0006F 1
+RAM 000A0-000EF 1
+RAM 00120-0016F 1
+SFR0 00000-0001F 1
+SFR1 00080-0009F 1
+SFR10 00500-0056F 1
+SFR11 00580-005EF 1
+SFR12 00600-0066F 1
+SFR13 00680-006EF 1
+SFR14 00700-0076F 1
+SFR15 00780-007EF 1
+SFR16 00800-0086F 1
+SFR17 00880-008EF 1
+SFR18 00900-0096F 1
+SFR19 00980-009EF 1
+SFR2 00100-0011F 1
+SFR20 00A00-00A6F 1
+SFR21 00A80-00AEF 1
+SFR22 00B00-00B6F 1
+SFR23 00B80-00BEF 1
+SFR24 00C00-00C6F 1
+SFR25 00C80-00CEF 1
+SFR26 00D00-00D6F 1
+SFR27 00D80-00DEF 1
+SFR28 00E00-00E6F 1
+SFR29 00E80-00EEF 1
+SFR3 00180-001EF 1
+SFR30 00F00-00F6F 1
+SFR31 00F80-00FEF 1
+SFR4 00200-0026F 1
+SFR5 00280-002EF 1
+SFR6 00300-0036F 1
+SFR7 00380-003EF 1
+SFR8 00400-0046F 1
+SFR9 00480-004EF 1
+STACK 02017-020EF 1
+STRCODE 00004-00490 2
+STRCODE 00800-00FFF 2
+STRING 00004-00490 2
+STRING 00800-00FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+"C:\Program Files (x86)\Microchip\xc8\v1.32\include\pic12f1840.h":3156 0 text0 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":52 491 text16 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":54 492 text16 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":55 495 text16 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":82 496 text12 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":83 496 text12 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":84 498 text12 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":85 49A text12 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":92 49B text11 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":93 49B text11 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":94 49D text11 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":95 49F text11 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":87 4A0 text8 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":88 4A0 text8 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":89 4A2 text8 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":90 4A4 text8 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\mcp23017.c":50 4A5 text2 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\mcp23017.c":52 4A6 text2 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\mcp23017.c":53 4A9 text2 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":76 4AA text15 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":79 4AA text15 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":80 4B0 text15 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":115 4B1 text6 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":116 4B2 text6 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":117 4B4 text6 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":118 4B7 text6 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":103 4B8 text14 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":104 4B8 text14 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":105 4BA text14 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\mcp23017.c":55 4C0 text3 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\mcp23017.c":57 4C1 text3 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\mcp23017.c":58 4C7 text3 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":57 4C8 text17 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":59 4C9 text17 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":60 4D0 text17 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":97 4D1 text7 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":98 4D2 text7 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":99 4D4 text7 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":100 4DA text7 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":101 4DB text7 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":108 4DC text13 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":109 4DD text13 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":110 4DF text13 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":111 4E1 text13 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":112 4E5 text13 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":113 4E8 text13 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":120 4E9 text9 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":123 4E9 text9 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":124 4EC text9 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":125 4EE text9 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":126 4F0 text9 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":128 4F5 text9 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":76 4F7 text10 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":81 4F7 text10 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":82 4FA text10 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":83 500 text10 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":84 506 text10 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":85 508 text10 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\mcp23017.c":60 50A text1 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\mcp23017.c":62 50C text1 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\mcp23017.c":63 50F text1 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\mcp23017.c":64 515 text1 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\mcp23017.c":65 51A text1 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\mcp23017.c":66 51E text1 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\mcp23017.c":67 520 text1 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":97 521 text20 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":98 521 text20 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":99 525 text20 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":98 535 text20 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":62 53A text4 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":64 53A text4 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":68 550 text4 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":69 553 text4 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":70 559 text4 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":71 56C text4 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":72 570 text4 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":73 574 text4 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":74 576 text4 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":51 577 text18 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":53 577 text18 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":54 57B text18 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":57 57F text18 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":58 582 text18 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":64 583 text18 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":69 5AA text18 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":70 5BB text18 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":71 5BD text18 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\pic12f1840_i2c.c":72 5BE text18 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":88 5C1 text5 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":92 5C1 text5 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":96 5D7 text5 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":97 5DA text5 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":98 5E0 text5 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":99 5F3 text5 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":100 5F7 text5 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":101 5FA text5 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":102 601 text5 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":103 607 text5 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":104 60B text5 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\m24fc1025.c":106 60D text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":6 60F text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":14 60F text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":15 617 text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":16 61D text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":17 61F text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":18 621 text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":19 628 text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":17 62C text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":22 62D text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":23 634 text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":24 644 text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":25 64C text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":27 64D text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":28 654 text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c":30 658 text19 CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":54 661 maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":55 661 maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":57 667 maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":59 66E maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":60 67A maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":61 67E maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":62 682 maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":63 687 maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":66 68C maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":67 695 maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":68 6A6 maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":69 6B5 maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":67 6BB maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":71 6D7 maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":72 6EB maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":73 6FA maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":71 700 maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":77 71D maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":78 725 maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":79 738 maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":80 74B maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":78 751 maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":82 76D maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":83 77F maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":84 792 maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":82 798 maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":89 7A6 maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":90 7BE maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":91 7D1 maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":92 7E9 maintext CODE
+"D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-24FC1025.X\main.c":89 7F0 maintext CODE
+"C:\Users\Omar\AppData\Local\Temp\sic.":857 7FA cinit CODE
+"C:\Users\Omar\AppData\Local\Temp\sic.":860 7FA cinit CODE
+"C:\Users\Omar\AppData\Local\Temp\sic.":874 7FA cinit CODE
+"C:\Users\Omar\AppData\Local\Temp\sic.":875 7FB cinit CODE
+"C:\Users\Omar\AppData\Local\Temp\sic.":881 7FC cinit CODE
+"C:\Users\Omar\AppData\Local\Temp\sic.":882 7FC cinit CODE
+"C:\Users\Omar\AppData\Local\Temp\sic.":883 7FD cinit CODE
+"C:\Users\Omar\AppData\Local\Temp\sic.":884 7FE cinit CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___lldiv@counter 7D 0 COMMON 1 cstackCOMMON dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+i2c_send_address@address 72 0 COMMON 1 cstackCOMMON dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__CFG_WRT$OFF 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__S0 8009 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Hintentry 4 0 CODE 0 intentry -
+__Lintentry 4 0 CODE 0 intentry -
+__CFG_BOREN$ON 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__end_of_i2c_send_data 970 0 CODE 0 text6 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+m24fc1025_read_byte@addr_17b 73 0 COMMON 1 cstackCOMMON dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__CFG_PWRTE$ON 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+_g_slave_addr_7b 35 0 BANK0 1 bssBANK0 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+mcp23017_write_reg@value 7D 0 COMMON 1 cstackCOMMON dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+_main CC2 0 CODE 0 maintext dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\Omar\AppData\Local\Temp\sic.obj
+_i2c_read_data 9D2 0 CODE 0 text9 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+btemp 7E 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+ltemp 7E 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+ttemp 7E 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+wtemp 7E 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+start 4 0 CODE 0 init C:\Users\Omar\AppData\Local\Temp\sic.obj
+__size_of_i2c_wait 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__size_of_m24fc1025_set_slave_addr 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+mcp23017_write_reg@reg_address 20 0 BANK0 1 cstackBANK0 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Omar\AppData\Local\Temp\sic.obj
+__end_of_i2c_send_address 9D2 0 CODE 0 text13 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+ttemp0 7E 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+ltemp1 82 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+ttemp1 81 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+wtemp1 80 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+ltemp2 86 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+ttemp2 84 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+wtemp2 82 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+ltemp3 80 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+ttemp3 87 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+wtemp3 84 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+_i2c_send_data 962 0 CODE 0 text6 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+wtemp4 86 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+wtemp5 88 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hconfig 10012 0 CONFIG 0 config -
+__Lconfig 1000E 0 CONFIG 0 config -
+__end_of_i2c_start 936 0 CODE 0 text12 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+main@c 29 0 BANK0 1 cstackBANK0 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hbigram 0 0 ABS 0 bigram -
+__Lbigram 0 0 ABS 0 bigram -
+_m24fc1025_init 922 0 CODE 0 text16 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+main@addr 31 0 BANK0 1 cstackBANK0 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+m24fc1025_write_byte@addr_17b 73 0 COMMON 1 cstackCOMMON dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__CFG_STVREN$ON 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+_mcp23017_write_reg A14 0 CODE 0 text1 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+_mcp23017_set_slave_addr 980 0 CODE 0 text3 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Lfunctab 0 0 CODE 0 functab -
+__size_of_i2c_restart 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+_i2c_wait 954 0 CODE 0 text15 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_i2c_init AEE 0 CODE 0 text18 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+_SSPADD 212 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\Omar\AppData\Local\Temp\sic.obj
+_delay_ms A42 0 CODE 0 text20 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+?___lldiv 70 0 COMMON 1 cstackCOMMON dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+_i2c_stop 936 0 CODE 0 text11 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__end_of_i2c_restart 94A 0 CODE 0 text8 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+_SSPBUF 211 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__size_of_i2c_init 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+pic14e$flags 7E 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__size_of_m24fc1025_write_byte 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__size_of_i2c_read_ack 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+main@c_127 2A 0 BANK0 1 cstackBANK0 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+i2c_init@clock_hz 20 0 BANK0 1 cstackBANK0 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__end_of_m24fc1025_is_write_busy A14 0 CODE 0 text10 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+main@c_128 2B 0 BANK0 1 cstackBANK0 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+_m24fc1025_read_byte B82 0 CODE 0 text5 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+main@c_129 2C 0 BANK0 1 cstackBANK0 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+stackhi 20EF 0 ABS 0 - C:\Users\Omar\AppData\Local\Temp\sic.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+stacklo 2017 0 ABS 0 - C:\Users\Omar\AppData\Local\Temp\sic.obj
+__Hinit 4 0 CODE 0 init -
+__Linit 4 0 CODE 0 init -
+__end_of_main FF4 0 CODE 0 maintext dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+end_of_initialization FF8 0 CODE 0 cinit dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Lsfr10 0 0 ABS 0 sfr10 -
+_SSPCON1 215 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+_SSPCON2 216 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__end_of_m24fc1025_set_slave_addr 9A2 0 CODE 0 text17 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+_TRISAbits 8C 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__size_of_i2c_read_data 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+__Lstrings 0 0 ABS 0 strings -
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+__end_of_m24fc1025_read_byte C1E 0 CODE 0 text5 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+m24fc1025_write_byte@value 77 0 COMMON 1 cstackCOMMON dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+_i2c_start 92C 0 CODE 0 text12 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hbank2 0 0 ABS 0 bank2 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 BANK3 1 bank3 -
+__Lbank3 0 0 BANK3 1 bank3 -
+___latbits 1 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hbank4 0 0 BANK4 1 bank4 -
+__Lbank4 0 0 BANK4 1 bank4 -
+__Hbank5 0 0 BANK5 1 bank5 -
+__Lbank5 0 0 BANK5 1 bank5 -
+__Hpowerup 0 0 CODE 0 powerup -
+__Lpowerup 0 0 CODE 0 powerup -
+__Hbank6 0 0 BANK6 1 bank6 -
+__Lbank6 0 0 BANK6 1 bank6 -
+mcp23017_init@address_3b 72 0 COMMON 1 cstackCOMMON dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hbank7 0 0 BANK7 1 bank7 -
+__Lbank7 0 0 BANK7 1 bank7 -
+__Hbank8 0 0 BANK8 1 bank8 -
+__Lbank8 0 0 BANK8 1 bank8 -
+m24fc1025_init@addr_2b 72 0 COMMON 1 cstackCOMMON dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hbank9 0 0 BANK9 1 bank9 -
+__Lbank9 0 0 BANK9 1 bank9 -
+_g_slave_address_7b 36 0 BANK0 1 bssBANK0 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__ptext0 0 0 CODE 0 text0 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__ptext1 A14 0 CODE 0 text1 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__ptext2 94A 0 CODE 0 text2 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__size_of_mcp23017_write_reg 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__ptext3 980 0 CODE 0 text3 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__ptext4 A74 0 CODE 0 text4 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__ptext5 B82 0 CODE 0 text5 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__ptext6 962 0 CODE 0 text6 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__ptext7 9A2 0 CODE 0 text7 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__ptext8 940 0 CODE 0 text8 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__ptext9 9D2 0 CODE 0 text9 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+__end_of_mcp23017_set_slave_addr 990 0 CODE 0 text3 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+i2c_send_address@mode 70 0 COMMON 1 cstackCOMMON dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__end_of__initialization FF8 0 CODE 0 cinit dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+i2c_read_data@read_data 71 0 COMMON 1 cstackCOMMON dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__end_of_m24fc1025_init 92C 0 CODE 0 text16 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+_SSPSTATbits 214 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+mcp23017_set_slave_addr@address_3b 71 0 COMMON 1 cstackCOMMON dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+main@addr_130 2D 0 BANK0 1 cstackBANK0 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Lstack 0 0 STACK 2 stack -
+__end_of___lldiv CC2 0 CODE 0 text19 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hspace_0 8009 0 ABS 0 - -
+__Lspace_0 0 0 ABS 0 - -
+_mcp23017_init 94A 0 CODE 0 text2 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+m24fc1025_read_byte@read_data 7C 0 COMMON 1 cstackCOMMON dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hspace_1 7E 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__size_of_i2c_send_ack 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+_i2c_send_address 9B8 0 CODE 0 text13 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hspace_2 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__size_of_delay_ms 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hcinit 1000 0 CODE 0 cinit -
+__Lcinit FF4 0 CODE 0 cinit -
+___lldiv C1E 0 CODE 0 text19 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hspace_3 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__size_of_main 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__CFG_BORV$LO 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__end_of_mcp23017_init 954 0 CODE 0 text2 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__CFG_MCLRE$OFF 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__end_of_m24fc1025_write_byte AEE 0 CODE 0 text4 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+_i2c_read_ack 970 0 CODE 0 text14 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+_m24fc1025_write_byte A74 0 CODE 0 text4 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__Hbank10 0 0 BANK10 1 bank10 -
+__pbssBANK0 35 0 BANK0 1 bssBANK0 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Lbank10 0 0 BANK10 1 bank10 -
+_i2c_send_ack 9A2 0 CODE 0 text7 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hbank20 0 0 BANK20 1 bank20 -
+__Lbank20 0 0 BANK20 1 bank20 -
+_SSP1CON2 216 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__size_of_mcp23017_set_slave_addr 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank11 0 0 BANK11 1 bank11 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank11 0 0 BANK11 1 bank11 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbank12 0 0 BANK12 1 bank12 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__Lbank12 0 0 BANK12 1 bank12 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Lbank13 0 0 BANK13 1 bank13 -
+_i2c_restart 940 0 CODE 0 text8 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hbank23 0 0 BANK23 1 bank23 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Lbank14 0 0 BANK14 1 bank14 -
+i2c_send_ack@ack 70 0 COMMON 1 cstackCOMMON dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hbank24 0 0 BANK24 1 bank24 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__ptext10 9EE 0 CODE 0 text10 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hbank15 0 0 BANK15 1 bank15 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__ptext20 A42 0 CODE 0 text20 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hbank25 0 0 BANK25 1 bank25 -
+__Lbank25 0 0 BANK25 1 bank25 -
+i2c_send_data@data 70 0 COMMON 1 cstackCOMMON dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__ptext11 936 0 CODE 0 text11 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hbank16 0 0 BANK16 1 bank16 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__ptext12 92C 0 CODE 0 text12 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hbank17 0 0 BANK17 1 bank17 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__CFG_PLLEN$OFF 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__ptext13 9B8 0 CODE 0 text13 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hbank18 0 0 BANK18 1 bank18 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__size_of_i2c_send_data 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__ptext14 970 0 CODE 0 text14 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hbank19 0 0 BANK19 1 bank19 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__ptext15 954 0 CODE 0 text15 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+_m24fc1025_set_slave_addr 990 0 CODE 0 text17 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__ptext16 922 0 CODE 0 text16 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__ptext17 990 0 CODE 0 text17 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+_ANSELAbits 18C 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__ptext18 AEE 0 CODE 0 text18 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__ptext19 C1E 0 CODE 0 text19 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__end_of_i2c_stop 940 0 CODE 0 text11 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+_OSCCONbits 99 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hend_init 8 0 CODE 0 end_init -
+__Lend_init 4 0 CODE 0 end_init -
+m24fc1025_set_slave_addr@addr_2b 71 0 COMMON 1 cstackCOMMON dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+___lldiv@divisor 70 0 COMMON 1 cstackCOMMON dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__size_of___lldiv 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__end_of_i2c_wait 962 0 CODE 0 text15 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__size_of_i2c_stop 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__end_of_delay_ms A74 0 CODE 0 text20 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__size_of_i2c_start 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__size_of_m24fc1025_read_byte 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+delay_ms@t_ms 70 0 COMMON 1 cstackCOMMON dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__size_of_mcp23017_init 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\Omar\AppData\Local\Temp\sic.obj
+__end_of_i2c_init B82 0 CODE 0 text18 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+intlevel1 0 0 CODE 0 functab C:\Users\Omar\AppData\Local\Temp\sic.obj
+intlevel2 0 0 CODE 0 functab C:\Users\Omar\AppData\Local\Temp\sic.obj
+__end_of_i2c_read_ack 980 0 CODE 0 text14 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+intlevel3 0 0 CODE 0 functab C:\Users\Omar\AppData\Local\Temp\sic.obj
+intlevel4 0 0 CODE 0 functab C:\Users\Omar\AppData\Local\Temp\sic.obj
+__size_of_i2c_send_address 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+intlevel5 0 0 CODE 0 functab C:\Users\Omar\AppData\Local\Temp\sic.obj
+_SSP1CON2bits 216 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+start_initialization FF4 0 CODE 0 cinit dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+___lldiv@quotient 79 0 COMMON 1 cstackCOMMON dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__end_of_i2c_read_data 9EE 0 CODE 0 text9 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__CFG_IESO$OFF 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__pmaintext CC2 0 CODE 0 maintext dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__end_of_mcp23017_write_reg A42 0 CODE 0 text1 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+_m24fc1025_is_write_busy 9EE 0 CODE 0 text10 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__CFG_FOSC$INTOSC 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__initialization FF4 0 CODE 0 cinit dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__end_of_i2c_send_ack 9B8 0 CODE 0 text7 dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__size_of_m24fc1025_is_write_busy 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__CFG_FCMEN$ON 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+m24fc1025_is_write_busy@read_ack 74 0 COMMON 1 cstackCOMMON dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+___lldiv@dividend 74 0 COMMON 1 cstackCOMMON dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+__size_of_m24fc1025_init 0 0 ABS 0 - dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+delay_ms@c 72 0 COMMON 1 cstackCOMMON dist/PIC12F1840_PK3_FREE/production\PIC12-24FC1025.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 4 2
+cinit 0 7FA FF4 6 2
+config 0 8007 1000E 2 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 17 1
+maintext 0 661 CC2 199 2
+text19 0 60F C1E 52 2
+text5 0 5C1 B82 4E 2
+text18 0 577 AEE 4A 2
+text4 0 53A A74 3D 2
+text20 0 521 A42 19 2
+text1 0 50A A14 17 2
+text10 0 4F7 9EE 13 2
+text9 0 4E9 9D2 E 2
+text13 0 4DC 9B8 D 2
+text7 0 4D1 9A2 B 2
+text17 0 4C8 990 9 2
+text3 0 4C0 980 8 2
+text14 0 4B8 970 8 2
+text6 0 4B1 962 7 2
+text15 0 4AA 954 7 2
+text2 0 4A5 94A 5 2
+text8 0 4A0 940 5 2
+text11 0 49B 936 5 2
+text12 0 496 92C 5 2
+text16 0 491 922 5 2

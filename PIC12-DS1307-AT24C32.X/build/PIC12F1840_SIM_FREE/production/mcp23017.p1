@@ -1,0 +1,177 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"84 mcp23017.h
+[v _mcp23017_set_slave_addr `(v ~T0 @X0 0 ef1`uc ]
+"73 pic12f1840_i2c.h
+[v _i2c_start `(v ~T0 @X0 0 ef ]
+"97
+[v _i2c_send_address `(v ~T0 @X0 0 ef2`uc`uc ]
+"102
+[v _i2c_send_data `(v ~T0 @X0 0 ef1`uc ]
+"81
+[v _i2c_stop `(v ~T0 @X0 0 ef ]
+"77
+[v _i2c_restart `(v ~T0 @X0 0 ef ]
+"107
+[v _i2c_read_data `(uc ~T0 @X0 0 ef ]
+[; ;stdint.h: 13: typedef signed char int8_t;
+[; ;stdint.h: 20: typedef signed int int16_t;
+[; ;stdint.h: 36: typedef signed long int int32_t;
+[; ;stdint.h: 43: typedef unsigned char uint8_t;
+[; ;stdint.h: 49: typedef unsigned int uint16_t;
+[; ;stdint.h: 63: typedef unsigned long int uint32_t;
+[; ;stdint.h: 71: typedef signed char int_least8_t;
+[; ;stdint.h: 78: typedef signed int int_least16_t;
+[; ;stdint.h: 86: typedef signed long int int_least24_t;
+[; ;stdint.h: 98: typedef signed long int int_least32_t;
+[; ;stdint.h: 105: typedef unsigned char uint_least8_t;
+[; ;stdint.h: 111: typedef unsigned int uint_least16_t;
+[; ;stdint.h: 118: typedef unsigned long int uint_least24_t;
+[; ;stdint.h: 128: typedef unsigned long int uint_least32_t;
+[; ;stdint.h: 137: typedef signed char int_fast8_t;
+[; ;stdint.h: 144: typedef signed int int_fast16_t;
+[; ;stdint.h: 152: typedef signed long int int_fast24_t;
+[; ;stdint.h: 164: typedef signed long int int_fast32_t;
+[; ;stdint.h: 171: typedef unsigned char uint_fast8_t;
+[; ;stdint.h: 177: typedef unsigned int uint_fast16_t;
+[; ;stdint.h: 184: typedef unsigned long int uint_fast24_t;
+[; ;stdint.h: 194: typedef unsigned long int uint_fast32_t;
+[; ;stdint.h: 200: typedef int32_t intmax_t;
+[; ;stdint.h: 205: typedef uint32_t uintmax_t;
+[; ;stdint.h: 210: typedef int16_t intptr_t;
+[; ;stdint.h: 215: typedef uint16_t uintptr_t;
+[; ;stdbool.h: 12: typedef unsigned char bool;
+[; ;mcp23017.h: 48: typedef enum {
+[; ;mcp23017.h: 49: MCP23017_REG_IODIRA = 0x00,
+[; ;mcp23017.h: 50: MCP23017_REG_IODIRB,
+[; ;mcp23017.h: 51: MCP23017_REG_IPOLA,
+[; ;mcp23017.h: 52: MCP23017_REG_IPOLB,
+[; ;mcp23017.h: 53: MCP23017_REG_GPINTENA,
+[; ;mcp23017.h: 54: MCP23017_REG_GPINTENB,
+[; ;mcp23017.h: 55: MCP23017_REG_DEFVALA,
+[; ;mcp23017.h: 56: MCP23017_REG_DEFVALB,
+[; ;mcp23017.h: 57: MCP23017_REG_INTCONA,
+[; ;mcp23017.h: 58: MCP23017_REG_INTCONB,
+[; ;mcp23017.h: 59: MCP23017_REG_IOCON1,
+[; ;mcp23017.h: 60: MCP23017_REG_IOCON2,
+[; ;mcp23017.h: 61: MCP23017_REG_GPPUA,
+[; ;mcp23017.h: 62: MCP23017_REG_GPPUB,
+[; ;mcp23017.h: 63: MCP23017_REG_INTFA,
+[; ;mcp23017.h: 64: MCP23017_REG_INTFB,
+[; ;mcp23017.h: 65: MCP23017_REG_INTCAPA,
+[; ;mcp23017.h: 66: MCP23017_REG_INTCAPB,
+[; ;mcp23017.h: 67: MCP23017_REG_GPIOA,
+[; ;mcp23017.h: 68: MCP23017_REG_GPIOB,
+[; ;mcp23017.h: 69: MCP23017_REG_OLATA,
+[; ;mcp23017.h: 70: MCP23017_REG_OLATB
+[; ;mcp23017.h: 71: } mcp23017_registers_t;
+[; ;mcp23017.h: 79: void mcp23017_init(uint8_t address_3b);
+[; ;mcp23017.h: 84: void mcp23017_set_slave_addr(uint8_t address_3b);
+[; ;mcp23017.h: 90: void mcp23017_write_reg(uint8_t reg_address, uint8_t value);
+[; ;mcp23017.h: 96: uint8_t mcp23017_read_reg(uint8_t reg_address);
+[; ;pic12f1840_i2c.h: 65: void i2c_init(uint32_t clock_hz);
+[; ;pic12f1840_i2c.h: 69: void i2c_wait(void);
+[; ;pic12f1840_i2c.h: 73: void i2c_start(void);
+[; ;pic12f1840_i2c.h: 77: void i2c_restart(void);
+[; ;pic12f1840_i2c.h: 81: void i2c_stop(void);
+[; ;pic12f1840_i2c.h: 86: void i2c_send_ack(bool ack);
+[; ;pic12f1840_i2c.h: 91: bool i2c_read_ack(void);
+[; ;pic12f1840_i2c.h: 97: void i2c_send_address(uint8_t address, bool mode);
+[; ;pic12f1840_i2c.h: 102: void i2c_send_data(uint8_t data);
+[; ;pic12f1840_i2c.h: 107: uint8_t i2c_read_data(void);
+"43 mcp23017.c
+[v _g_slave_address_7b `uc ~T0 @X0 1 s ]
+[; ;mcp23017.c: 43: static uint8_t g_slave_address_7b;
+"50
+[v _mcp23017_init `(v ~T0 @X0 1 ef1`uc ]
+{
+[; ;mcp23017.c: 50: void mcp23017_init(uint8_t address_3b) {
+[e :U _mcp23017_init ]
+[v _address_3b `uc ~T0 @X0 1 r1 ]
+[f ]
+[; ;mcp23017.c: 52: mcp23017_set_slave_addr(address_3b);
+"52
+[e ( _mcp23017_set_slave_addr (1 _address_3b ]
+[; ;mcp23017.c: 53: }
+"53
+[e :UE 1 ]
+}
+"55
+[v _mcp23017_set_slave_addr `(v ~T0 @X0 1 ef1`uc ]
+{
+[; ;mcp23017.c: 55: void mcp23017_set_slave_addr(uint8_t address_3b) {
+[e :U _mcp23017_set_slave_addr ]
+[v _address_3b `uc ~T0 @X0 1 r1 ]
+[f ]
+[; ;mcp23017.c: 57: g_slave_address_7b = (0b0100 << 3) | address_3b;
+"57
+[e = _g_slave_address_7b -> | << -> 4 `i -> 3 `i -> _address_3b `i `uc ]
+[; ;mcp23017.c: 58: }
+"58
+[e :UE 2 ]
+}
+"60
+[v _mcp23017_write_reg `(v ~T0 @X0 1 ef2`uc`uc ]
+{
+[; ;mcp23017.c: 60: void mcp23017_write_reg(uint8_t reg_address, uint8_t value) {
+[e :U _mcp23017_write_reg ]
+[v _reg_address `uc ~T0 @X0 1 r1 ]
+[v _value `uc ~T0 @X0 1 r2 ]
+[f ]
+[; ;mcp23017.c: 62: i2c_start();
+"62
+[e ( _i2c_start ..  ]
+[; ;mcp23017.c: 63: i2c_send_address(g_slave_address_7b, 0);
+"63
+[e ( _i2c_send_address (2 , _g_slave_address_7b -> -> 0 `i `uc ]
+[; ;mcp23017.c: 64: i2c_send_data(reg_address);
+"64
+[e ( _i2c_send_data (1 _reg_address ]
+[; ;mcp23017.c: 65: i2c_send_data(value);
+"65
+[e ( _i2c_send_data (1 _value ]
+[; ;mcp23017.c: 66: i2c_stop();
+"66
+[e ( _i2c_stop ..  ]
+[; ;mcp23017.c: 67: }
+"67
+[e :UE 3 ]
+}
+"69
+[v _mcp23017_read_reg `(uc ~T0 @X0 1 ef1`uc ]
+{
+[; ;mcp23017.c: 69: uint8_t mcp23017_read_reg(uint8_t reg_address) {
+[e :U _mcp23017_read_reg ]
+[v _reg_address `uc ~T0 @X0 1 r1 ]
+[f ]
+"70
+[v _value `uc ~T0 @X0 1 a ]
+[; ;mcp23017.c: 70: uint8_t value;
+[; ;mcp23017.c: 73: i2c_start();
+"73
+[e ( _i2c_start ..  ]
+[; ;mcp23017.c: 74: i2c_send_address(g_slave_address_7b, 0);
+"74
+[e ( _i2c_send_address (2 , _g_slave_address_7b -> -> 0 `i `uc ]
+[; ;mcp23017.c: 75: i2c_send_data(reg_address);
+"75
+[e ( _i2c_send_data (1 _reg_address ]
+[; ;mcp23017.c: 76: i2c_restart();
+"76
+[e ( _i2c_restart ..  ]
+[; ;mcp23017.c: 77: i2c_send_address(g_slave_address_7b, 1);
+"77
+[e ( _i2c_send_address (2 , _g_slave_address_7b -> -> 1 `i `uc ]
+[; ;mcp23017.c: 78: value = i2c_read_data();
+"78
+[e = _value ( _i2c_read_data ..  ]
+[; ;mcp23017.c: 79: i2c_stop();
+"79
+[e ( _i2c_stop ..  ]
+[; ;mcp23017.c: 81: return value;
+"81
+[e ) _value ]
+[e $UE 4  ]
+[; ;mcp23017.c: 82: }
+"82
+[e :UE 4 ]
+}

@@ -1,0 +1,185 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"96 mcp23017.h
+[v _mcp23017_read_reg `(uc ~T0 @X0 0 ef1`uc ]
+"53 keypad.c
+[c E36 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 .. ]
+[n E36 . MCP23017_REG_IODIRA MCP23017_REG_IODIRB MCP23017_REG_IPOLA MCP23017_REG_IPOLB MCP23017_REG_GPINTENA MCP23017_REG_GPINTENB MCP23017_REG_DEFVALA MCP23017_REG_DEFVALB MCP23017_REG_INTCONA MCP23017_REG_INTCONB MCP23017_REG_IOCON1 MCP23017_REG_IOCON2 MCP23017_REG_GPPUA MCP23017_REG_GPPUB MCP23017_REG_INTFA MCP23017_REG_INTFB MCP23017_REG_INTCAPA MCP23017_REG_INTCAPB MCP23017_REG_GPIOA MCP23017_REG_GPIOB MCP23017_REG_OLATA MCP23017_REG_OLATB  ]
+"90 mcp23017.h
+[v _mcp23017_write_reg `(v ~T0 @X0 0 ef2`uc`uc ]
+[; ;stdint.h: 13: typedef signed char int8_t;
+[; ;stdint.h: 20: typedef signed int int16_t;
+[; ;stdint.h: 36: typedef signed long int int32_t;
+[; ;stdint.h: 43: typedef unsigned char uint8_t;
+[; ;stdint.h: 49: typedef unsigned int uint16_t;
+[; ;stdint.h: 63: typedef unsigned long int uint32_t;
+[; ;stdint.h: 71: typedef signed char int_least8_t;
+[; ;stdint.h: 78: typedef signed int int_least16_t;
+[; ;stdint.h: 86: typedef signed long int int_least24_t;
+[; ;stdint.h: 98: typedef signed long int int_least32_t;
+[; ;stdint.h: 105: typedef unsigned char uint_least8_t;
+[; ;stdint.h: 111: typedef unsigned int uint_least16_t;
+[; ;stdint.h: 118: typedef unsigned long int uint_least24_t;
+[; ;stdint.h: 128: typedef unsigned long int uint_least32_t;
+[; ;stdint.h: 137: typedef signed char int_fast8_t;
+[; ;stdint.h: 144: typedef signed int int_fast16_t;
+[; ;stdint.h: 152: typedef signed long int int_fast24_t;
+[; ;stdint.h: 164: typedef signed long int int_fast32_t;
+[; ;stdint.h: 171: typedef unsigned char uint_fast8_t;
+[; ;stdint.h: 177: typedef unsigned int uint_fast16_t;
+[; ;stdint.h: 184: typedef unsigned long int uint_fast24_t;
+[; ;stdint.h: 194: typedef unsigned long int uint_fast32_t;
+[; ;stdint.h: 200: typedef int32_t intmax_t;
+[; ;stdint.h: 205: typedef uint32_t uintmax_t;
+[; ;stdint.h: 210: typedef int16_t intptr_t;
+[; ;stdint.h: 215: typedef uint16_t uintptr_t;
+[; ;stdbool.h: 12: typedef unsigned char bool;
+[; ;stddef.h: 2: typedef int ptrdiff_t;
+[; ;stddef.h: 3: typedef unsigned size_t;
+[; ;stddef.h: 4: typedef unsigned short wchar_t;
+[; ;stddef.h: 13: extern int errno;
+[; ;keypad.h: 53: void keypad_init(void);
+[; ;keypad.h: 58: uint8_t keypad_read_key(void);
+[; ;mcp23017.h: 48: typedef enum {
+[; ;mcp23017.h: 49: MCP23017_REG_IODIRA = 0x00,
+[; ;mcp23017.h: 50: MCP23017_REG_IODIRB,
+[; ;mcp23017.h: 51: MCP23017_REG_IPOLA,
+[; ;mcp23017.h: 52: MCP23017_REG_IPOLB,
+[; ;mcp23017.h: 53: MCP23017_REG_GPINTENA,
+[; ;mcp23017.h: 54: MCP23017_REG_GPINTENB,
+[; ;mcp23017.h: 55: MCP23017_REG_DEFVALA,
+[; ;mcp23017.h: 56: MCP23017_REG_DEFVALB,
+[; ;mcp23017.h: 57: MCP23017_REG_INTCONA,
+[; ;mcp23017.h: 58: MCP23017_REG_INTCONB,
+[; ;mcp23017.h: 59: MCP23017_REG_IOCON1,
+[; ;mcp23017.h: 60: MCP23017_REG_IOCON2,
+[; ;mcp23017.h: 61: MCP23017_REG_GPPUA,
+[; ;mcp23017.h: 62: MCP23017_REG_GPPUB,
+[; ;mcp23017.h: 63: MCP23017_REG_INTFA,
+[; ;mcp23017.h: 64: MCP23017_REG_INTFB,
+[; ;mcp23017.h: 65: MCP23017_REG_INTCAPA,
+[; ;mcp23017.h: 66: MCP23017_REG_INTCAPB,
+[; ;mcp23017.h: 67: MCP23017_REG_GPIOA,
+[; ;mcp23017.h: 68: MCP23017_REG_GPIOB,
+[; ;mcp23017.h: 69: MCP23017_REG_OLATA,
+[; ;mcp23017.h: 70: MCP23017_REG_OLATB
+[; ;mcp23017.h: 71: } mcp23017_registers_t;
+[; ;mcp23017.h: 79: void mcp23017_init(uint8_t address_3b);
+[; ;mcp23017.h: 84: void mcp23017_set_slave_addr(uint8_t address_3b);
+[; ;mcp23017.h: 90: void mcp23017_write_reg(uint8_t reg_address, uint8_t value);
+[; ;mcp23017.h: 96: uint8_t mcp23017_read_reg(uint8_t reg_address);
+"42 keypad.c
+[v _g_old_key `uc ~T0 @X0 1 s ]
+[; ;keypad.c: 42: static uint8_t g_old_key;
+"43
+[v _g_last_valid_key `uc ~T0 @X0 1 s ]
+[; ;keypad.c: 43: static uint8_t g_last_valid_key;
+[; ;keypad.c: 48: uint8_t keypad_scan(void);
+"51
+[v _keypad_scan `(uc ~T0 @X0 1 ef ]
+{
+[; ;keypad.c: 51: uint8_t keypad_scan(void){
+[e :U _keypad_scan ]
+[f ]
+[; ;keypad.c: 53: return mcp23017_read_reg(MCP23017_REG_GPIOB);
+"53
+[e ) ( _mcp23017_read_reg (1 -> . `E36 19 `uc ]
+[e $UE 1  ]
+[; ;keypad.c: 54: }
+"54
+[e :UE 1 ]
+}
+"57
+[v _keypad_init `(v ~T0 @X0 1 ef ]
+{
+[; ;keypad.c: 57: void keypad_init(void) {
+[e :U _keypad_init ]
+[f ]
+[; ;keypad.c: 58: mcp23017_write_reg(MCP23017_REG_IODIRB, 0xFF);
+"58
+[e ( _mcp23017_write_reg (2 , -> . `E36 1 `uc -> -> 255 `i `uc ]
+[; ;keypad.c: 59: mcp23017_write_reg(MCP23017_REG_GPPUB,0xFF);
+"59
+[e ( _mcp23017_write_reg (2 , -> . `E36 13 `uc -> -> 255 `i `uc ]
+[; ;keypad.c: 60: mcp23017_write_reg(MCP23017_REG_IPOLB,0xFF);
+"60
+[e ( _mcp23017_write_reg (2 , -> . `E36 3 `uc -> -> 255 `i `uc ]
+[; ;keypad.c: 61: }
+"61
+[e :UE 2 ]
+}
+"63
+[v _keypad_read_key `(uc ~T0 @X0 1 ef ]
+{
+[; ;keypad.c: 63: uint8_t keypad_read_key(void) {
+[e :U _keypad_read_key ]
+[f ]
+"64
+[v _key `uc ~T0 @X0 1 a ]
+[; ;keypad.c: 64: uint8_t key;
+[; ;keypad.c: 66: key = keypad_scan();
+"66
+[e = _key ( _keypad_scan ..  ]
+[; ;keypad.c: 67: if (key == (0)) {
+"67
+[e $ ! == -> _key `i -> 0 `i 4  ]
+{
+[; ;keypad.c: 69: g_old_key = (0);
+"69
+[e = _g_old_key -> -> 0 `i `uc ]
+[; ;keypad.c: 70: g_last_valid_key = (0);
+"70
+[e = _g_last_valid_key -> -> 0 `i `uc ]
+"71
+}
+[; ;keypad.c: 71: } else if (key == g_old_key) {
+[e $U 5  ]
+[e :U 4 ]
+[e $ ! == -> _key `i -> _g_old_key `i 6  ]
+{
+[; ;keypad.c: 73: if (key != g_last_valid_key) {
+"73
+[e $ ! != -> _key `i -> _g_last_valid_key `i 7  ]
+{
+[; ;keypad.c: 75: g_last_valid_key = key;
+"75
+[e = _g_last_valid_key _key ]
+"76
+}
+[; ;keypad.c: 76: }
+[e $U 8  ]
+"77
+[e :U 7 ]
+[; ;keypad.c: 77: else{
+{
+[; ;keypad.c: 78: key = (0);
+"78
+[e = _key -> -> 0 `i `uc ]
+"79
+}
+[e :U 8 ]
+"80
+}
+[; ;keypad.c: 79: }
+[; ;keypad.c: 80: } else {
+[e $U 9  ]
+[e :U 6 ]
+{
+[; ;keypad.c: 81: g_old_key = key;
+"81
+[e = _g_old_key _key ]
+[; ;keypad.c: 82: key = (0);
+"82
+[e = _key -> -> 0 `i `uc ]
+"83
+}
+[e :U 9 ]
+[e :U 5 ]
+[; ;keypad.c: 83: }
+[; ;keypad.c: 84: return key;
+"84
+[e ) _key ]
+[e $UE 3  ]
+[; ;keypad.c: 85: }
+"85
+[e :UE 3 ]
+}

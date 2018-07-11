@@ -1,0 +1,17 @@
+_i2c_send_data: CODE, 1683 0 7
+_i2c_send_address: CODE, 1698 0 13
+_i2c_start: CODE, 1666 0 5
+_i2c_restart: CODE, 1661 0 5
+_main: CODE, 1961 0 82
+_mcp23017_set_slave_addr: CODE, 1690 0 8
+__initialization: CODE, 2043 0 1
+___lldiv: CODE, 1879 0 82
+_mcp23017_init: CODE, 1656 0 5
+_mcp23017_read_reg: CODE, 1771 0 34
+_i2c_stop: CODE, 1671 0 5
+_i2c_wait: CODE, 1676 0 7
+_delay_ms: CODE, 1746 0 25
+_i2c_init: CODE, 1805 0 74
+_i2c_read_data: CODE, 1711 0 14
+_mcp23017_write_reg: CODE, 1725 0 21
+Total: 388

@@ -1,0 +1,363 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 12F1840 ]
+[d frameptr 6 ]
+"59 D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-MCP23017.X\main.c
+[e E2113 . `uc
+MCP23017_REG_IODIRA 0
+MCP23017_REG_IODIRB 1
+MCP23017_REG_IPOLA 2
+MCP23017_REG_IPOLB 3
+MCP23017_REG_GPINTENA 4
+MCP23017_REG_GPINTENB 5
+MCP23017_REG_DEFVALA 6
+MCP23017_REG_DEFVALB 7
+MCP23017_REG_INTCONA 8
+MCP23017_REG_INTCONB 9
+MCP23017_REG_IOCON1 10
+MCP23017_REG_IOCON2 11
+MCP23017_REG_GPPUA 12
+MCP23017_REG_GPPUB 13
+MCP23017_REG_INTFA 14
+MCP23017_REG_INTFB 15
+MCP23017_REG_INTCAPA 16
+MCP23017_REG_INTCAPB 17
+MCP23017_REG_GPIOA 18
+MCP23017_REG_GPIOB 19
+MCP23017_REG_OLATA 20
+MCP23017_REG_OLATB 21
+]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\abdiv.c
+[v ___abdiv __abdiv `(c  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\abmod.c
+[v ___abmod __abmod `(c  1 e 1 0 ]
+"31 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\abtofl.c
+[v ___abtofl __abtofl `(d  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"36 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\altofl.c
+[v ___altofl __altofl `(d  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"37 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\attofl.c
+[v ___attofl __attofl `(d  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"31 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awtofl.c
+[v ___awtofl __awtofl `(d  1 e 4 0 ]
+"63 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\double.c
+[v ___flpack __flpack `(d  1 e 4 0 ]
+"88 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fladd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\flmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\flneg.c
+[v ___flneg __flneg `(d  1 e 4 0 ]
+"18 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\flsub.c
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"43 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"27 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lbtofl.c
+[v ___lbtofl __lbtofl `(d  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"30 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lltofl.c
+[v ___lltofl __lltofl `(d  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"30 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lttofl.c
+[v ___lttofl __lttofl `(d  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lwtofl.c
+[v ___lwtofl __lwtofl `(d  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"24
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"48
+[v ___eetoc __eetoc `(uc  1 e 1 0 ]
+"56
+[v ___eetoi __eetoi `(ui  1 e 2 0 ]
+"64
+[v ___eetom __eetom `(um  1 e 3 0 ]
+"72
+[v ___eetol __eetol `(ul  1 e 4 0 ]
+"80
+[v ___ctoee __ctoee `(uc  1 e 1 0 ]
+"87
+[v ___itoee __itoee `(ui  1 e 2 0 ]
+"94
+[v ___mtoee __mtoee `(um  1 e 3 0 ]
+"101
+[v ___ltoee __ltoee `(ul  1 e 4 0 ]
+"108
+[v ___eetoft __eetoft `(f  1 e 4 0 ]
+"116
+[v ___eetofl __eetofl `(d  1 e 4 0 ]
+"124
+[v ___fttoee __fttoee `(f  1 e 4 0 ]
+"131
+[v ___fltoee __fltoee `(d  1 e 4 0 ]
+"49 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\fldiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"53 D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-MCP23017.X\main.c
+[v _main main `(v  1 e 0 0 ]
+"73
+[v _delay_ms delay_ms `(v  1 e 0 0 ]
+"50 D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-MCP23017.X\mcp23017.c
+[v _mcp23017_init mcp23017_init `(v  1 e 0 0 ]
+"55
+[v _mcp23017_set_slave_addr mcp23017_set_slave_addr `(v  1 e 0 0 ]
+"60
+[v _mcp23017_write_reg mcp23017_write_reg `(v  1 e 0 0 ]
+"69
+[v _mcp23017_read_reg mcp23017_read_reg `(uc  1 e 1 0 ]
+"51 D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-MCP23017.X\pic12f1840_i2c.c
+[v _i2c_init i2c_init `(v  1 e 0 0 ]
+"76
+[v _i2c_wait i2c_wait `(v  1 e 0 0 ]
+"82
+[v _i2c_start i2c_start `(v  1 e 0 0 ]
+"87
+[v _i2c_restart i2c_restart `(v  1 e 0 0 ]
+"92
+[v _i2c_stop i2c_stop `(v  1 e 0 0 ]
+"97
+[v _i2c_send_ack i2c_send_ack `(v  1 e 0 0 ]
+"103
+[v _i2c_read_ack i2c_read_ack `(uc  1 e 1 0 ]
+"108
+[v _i2c_send_address i2c_send_address `(v  1 e 0 0 ]
+"115
+[v _i2c_send_data i2c_send_data `(v  1 e 0 0 ]
+"120
+[v _i2c_read_data i2c_read_data `(uc  1 e 1 0 ]
+[s S135 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+]
+"986 C:\Program Files (x86)\Microchip\xc8\v1.32\include\pic12f1840.h
+[u S142 . 1 `S135 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES142  1 e 1 @140 ]
+[s S19 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 IRCF0 1 0 :1:3 
+`uc 1 IRCF1 1 0 :1:4 
+`uc 1 IRCF2 1 0 :1:5 
+`uc 1 IRCF3 1 0 :1:6 
+`uc 1 SPLLEN 1 0 :1:7 
+]
+"1389
+[s S28 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 IRCF 1 0 :4:3 
+]
+[u S32 . 1 `S19 1 . 1 0 `S28 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES32  1 e 1 @153 ]
+[s S115 . 1 `uc 1 ANSA0 1 0 :1:0 
+`uc 1 ANSA1 1 0 :1:1 
+`uc 1 ANSA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ANSA4 1 0 :1:4 
+]
+"2356
+[s S121 . 1 `uc 1 ANSELA 1 0 :5:0 
+]
+[u S123 . 1 `S115 1 . 1 0 `S121 1 . 1 0 ]
+[v _ANSELAbits ANSELAbits `VES123  1 e 1 @396 ]
+"2385
+[v _EEADR EEADR `VEus  1 e 2 @401 ]
+"2440
+[v _EEDATA EEDATA `VEuc  1 e 1 @403 ]
+"2491
+[v _EECON1 EECON1 `VEuc  1 e 1 @405 ]
+"2552
+[v _EECON2 EECON2 `VEuc  1 e 1 @406 ]
+"2973
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @529 ]
+"3010
+[v _SSPADD SSPADD `VEuc  1 e 1 @530 ]
+[s S155 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"3156
+[u S164 . 1 `S155 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES164  1 e 1 @532 ]
+"3205
+[v _SSPCON1 SSPCON1 `VEuc  1 e 1 @533 ]
+"3403
+[v _SSP1CON2 SSP1CON2 `VEuc  1 e 1 @534 ]
+"3408
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @534 ]
+"3425
+[v _SSP1CON2bits SSP1CON2bits `VES164  1 e 1 @534 ]
+"4840
+[v _CARRY CARRY `VEb  1 e 0 @24 ]
+"4968
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"5176
+[v _RD RD `VEb  1 e 0 @3240 ]
+"5430
+[v _WR WR `VEb  1 e 0 @3241 ]
+"5432
+[v _WREN WREN `VEb  1 e 0 @3242 ]
+"43 D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-MCP23017.X\mcp23017.c
+[v _g_slave_address_7b g_slave_address_7b `uc  1 s 1 g_slave_address_7b ]
+"53 D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-MCP23017.X\main.c
+[v _main main `(v  1 e 0 0 ]
+{
+"64
+[v main@c c `uc  1 a 1 10 ]
+"63
+[v main@value value `uc  1 a 1 9 ]
+"71
+} 0
+"60 D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-MCP23017.X\mcp23017.c
+[v _mcp23017_write_reg mcp23017_write_reg `(v  1 e 0 0 ]
+{
+[v mcp23017_write_reg@reg_address reg_address `uc  1 a 1 wreg ]
+[v mcp23017_write_reg@reg_address reg_address `uc  1 a 1 wreg ]
+[v mcp23017_write_reg@value value `uc  1 p 1 3 ]
+"62
+[v mcp23017_write_reg@reg_address reg_address `uc  1 a 1 4 ]
+"67
+} 0
+"69
+[v _mcp23017_read_reg mcp23017_read_reg `(uc  1 e 1 0 ]
+{
+[v mcp23017_read_reg@reg_address reg_address `uc  1 a 1 wreg ]
+"70
+[v mcp23017_read_reg@value value `uc  1 a 1 5 ]
+"69
+[v mcp23017_read_reg@reg_address reg_address `uc  1 a 1 wreg ]
+"73
+[v mcp23017_read_reg@reg_address reg_address `uc  1 a 1 4 ]
+"82
+} 0
+"92 D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-MCP23017.X\pic12f1840_i2c.c
+[v _i2c_stop i2c_stop `(v  1 e 0 0 ]
+{
+"95
+} 0
+"82
+[v _i2c_start i2c_start `(v  1 e 0 0 ]
+{
+"85
+} 0
+"115
+[v _i2c_send_data i2c_send_data `(v  1 e 0 0 ]
+{
+[v i2c_send_data@data data `uc  1 a 1 wreg ]
+[v i2c_send_data@data data `uc  1 a 1 wreg ]
+[v i2c_send_data@data data `uc  1 a 1 0 ]
+"118
+} 0
+"108
+[v _i2c_send_address i2c_send_address `(v  1 e 0 0 ]
+{
+[v i2c_send_address@address address `uc  1 a 1 wreg ]
+[v i2c_send_address@address address `uc  1 a 1 wreg ]
+[v i2c_send_address@mode mode `uc  1 p 1 0 ]
+[v i2c_send_address@address address `uc  1 a 1 2 ]
+"113
+} 0
+"87
+[v _i2c_restart i2c_restart `(v  1 e 0 0 ]
+{
+"90
+} 0
+"120
+[v _i2c_read_data i2c_read_data `(uc  1 e 1 0 ]
+{
+"121
+[v i2c_read_data@read_data read_data `uc  1 a 1 1 ]
+"129
+} 0
+"76
+[v _i2c_wait i2c_wait `(v  1 e 0 0 ]
+{
+"80
+} 0
+"50 D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-MCP23017.X\mcp23017.c
+[v _mcp23017_init mcp23017_init `(v  1 e 0 0 ]
+{
+[v mcp23017_init@address_3b address_3b `uc  1 a 1 wreg ]
+[v mcp23017_init@address_3b address_3b `uc  1 a 1 wreg ]
+"52
+[v mcp23017_init@address_3b address_3b `uc  1 a 1 2 ]
+"53
+} 0
+"55
+[v _mcp23017_set_slave_addr mcp23017_set_slave_addr `(v  1 e 0 0 ]
+{
+[v mcp23017_set_slave_addr@address_3b address_3b `uc  1 a 1 wreg ]
+[v mcp23017_set_slave_addr@address_3b address_3b `uc  1 a 1 wreg ]
+"57
+[v mcp23017_set_slave_addr@address_3b address_3b `uc  1 a 1 1 ]
+"58
+} 0
+"51 D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-MCP23017.X\pic12f1840_i2c.c
+[v _i2c_init i2c_init `(v  1 e 0 0 ]
+{
+[v i2c_init@clock_hz clock_hz `ul  1 p 4 0 ]
+"74
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"11
+[v ___lldiv@quotient quotient `ul  1 a 4 9 ]
+"12
+[v ___lldiv@counter counter `uc  1 a 1 13 ]
+"6
+[v ___lldiv@divisor divisor `ul  1 p 4 0 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 4 ]
+"31
+} 0
+"73 D:\Omar\Projects\X-ES Development\_Microchip PICs\X_PIC12F1840\PIC12-MCP23017.X\main.c
+[v _delay_ms delay_ms `(v  1 e 0 0 ]
+{
+"75
+[v delay_ms@c c `ui  1 a 2 2 ]
+"73
+[v delay_ms@t_ms t_ms `ui  1 p 2 0 ]
+"77
+} 0

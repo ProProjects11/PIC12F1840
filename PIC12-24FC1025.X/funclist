@@ -1,0 +1,23 @@
+_i2c_send_data: CODE, 1201 0 7
+_i2c_send_address: CODE, 1244 0 13
+_i2c_start: CODE, 1174 0 5
+_i2c_restart: CODE, 1184 0 5
+_m24fc1025_is_write_busy: CODE, 1271 0 19
+_main: CODE, 1633 0 409
+_m24fc1025_set_slave_addr: CODE, 1224 0 9
+_m24fc1025_read_byte: CODE, 1473 0 78
+_mcp23017_set_slave_addr: CODE, 1216 0 8
+__initialization: CODE, 2042 0 2
+_m24fc1025_init: CODE, 1169 0 5
+___lldiv: CODE, 1551 0 82
+_mcp23017_init: CODE, 1189 0 5
+_m24fc1025_write_byte: CODE, 1338 0 61
+_i2c_stop: CODE, 1179 0 5
+_i2c_wait: CODE, 1194 0 7
+_delay_ms: CODE, 1313 0 25
+_i2c_init: CODE, 1399 0 74
+_i2c_read_ack: CODE, 1208 0 8
+_i2c_read_data: CODE, 1257 0 14
+_mcp23017_write_reg: CODE, 1290 0 23
+_i2c_send_ack: CODE, 1233 0 11
+Total: 875
